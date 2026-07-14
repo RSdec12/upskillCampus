@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add Student</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/student.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <div class="form-container">
+
+        <h1>Add New Student</h1>
+
+        <form id="studentForm">
+
+            <label>Roll Number</label>
+            <input type="text" id="roll">
+
+            <label>Student Name</label>
+            <input type="text" id="name">
+
+            <label>Department</label>
+            <input type="text" id="department">
+
+            <label>Semester</label>
+            <input type="number" id="semester">
+
+            <label>Email</label>
+            <input type="email" id="email">
+
+            <label>Phone</label>
+            <input type="text" id="phone">
+
+            <button type="submit" id="saveBtn">Save Student</button>
+
+        </form>
+
+        <br>
+
+        <a href="dashboard.html">← Back to Dashboard</a>
+        <hr>
+
+        <h2>Student Records</h2>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search by Roll Number or Name..."
+                onkeyup="searchStudent()">
+        </div>
+
+        <table id="studentTable">
+
+            <thead>
+
+                <tr>
+                    <th>Roll No</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Semester</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script src="js/student.js"></script>
+    <footer>
+
+        <p>
+
+            © 2026 Student Result Management System
+
+            | Developed by Reetu Oram
+
+        </p>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+/* ===========================
+   Mobile Devices
+=========================== */
+
+@media screen and (max-width:768px){
+
+    /* Navigation */
+
+    nav,
+    .sidebar{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    nav a,
+    .sidebar a{
+
+        width:90%;
+        text-align:center;
+        margin:5px 0;
+
+    }
+
+    /* Dashboard Cards */
+
+    .cards{
+
+        grid-template-columns:1fr;
+
+    }
+
+    /* Forms */
+
+    .container{
+
+        width:95%;
+        padding:15px;
+
+    }
+
+    input,
+    select,
+    button{
+
+        width:100%;
+
+        font-size:16px;
+
+    }
+
+    /* Tables */
+
+    table{
+
+        display:block;
+
+        overflow-x:auto;
+
+        white-space:nowrap;
+
+    }
+
+    /* Signature */
+
+    .signature-section{
+
+        flex-direction:column;
+
+        gap:40px;
+
+    }
+
+    /* Header */
+
+    .top-header{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        gap:15px;
+
+    }
+
+}

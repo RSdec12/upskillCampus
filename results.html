@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/results.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Result Management System</h1>
+
+        <div class="form">
+
+            <label>Enter Roll Number</label>
+
+            <input type="text" id="rollSearch" placeholder="Enter Roll Number">
+
+            <button type="button" onclick="searchStudent()">
+                Search Student
+            </button>
+            <select id="studentSelect" style="display:none;">
+                <option value="">-- Select Student --</option>
+            </select>
+            <p class="student-info">
+                <strong>Roll No:</strong> <span id="roll">-</span>
+            </p>
+
+            <p class="student-info">
+                <strong>Department:</strong> <span id="department">-</span>
+            </p>
+
+            <p class="student-info">
+                <strong>Semester:</strong> <span id="semester">-</span>
+            </p>
+
+            <label>Mathematics</label>
+            <input type="number" id="sub1" min="0" max="100">
+
+            <label>Science</label>
+            <input type="number" id="sub2" min="0" max="100">
+
+            <label>English</label>
+            <input type="number" id="sub3" min="0" max="100">
+
+            <label>Computer</label>
+            <input type="number" id="sub4" min="0" max="100">
+
+            <label>Social Science</label>
+            <input type="number" id="sub5" min="0" max="100">
+
+            <div class="button-group">
+
+                <button onclick="calculateResult()">
+                    Calculate Result
+                </button>
+
+                <button onclick="printResult()">
+                    Print Result
+                </button>
+                <button onclick="downloadPDF()">
+                    Download PDF
+                </button>
+            </div>
+
+        </div>
+
+        <div class="result" id="marksheet">
+            <div class="college-header">
+
+                <h1>🎓 Student Result Management System</h1>
+
+                <h3>MITS Engineering College</h3>
+
+                <p>Academic Session: 2025-2026</p>
+
+            </div>
+
+            <hr>
+            <h2>Student Marksheet</h2>
+
+            <hr>
+
+            <p><strong>Name:</strong> <span id="resultName">-</span></p>
+
+            <p><strong>Roll Number:</strong> <span id="resultRoll">-</span></p>
+
+            <p><strong>Department:</strong> <span id="resultDepartment">-</span></p>
+
+            <p><strong>Semester:</strong> <span id="resultSemester">-</span></p>
+
+            <table class="marks-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Subject</th>
+
+                        <th>Marks</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>Mathematics</td>
+
+                        <td id="mathMarks">0</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Science</td>
+
+                        <td id="scienceMarks">0</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>English</td>
+
+                        <td id="englishMarks">0</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Computer</td>
+
+                        <td id="computerMarks">0</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Social Science</td>
+
+                        <td id="socialMarks">0</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+            <hr>
+
+            <p><strong>Total:</strong> <span id="total">0</span> / 500</p>
+
+            <p><strong>Percentage:</strong> <span id="percentage">0</span>%</p>
+
+            <p><strong>Grade:</strong> <span id="grade">-</span></p>
+
+            <p><strong>Status:</strong> <span id="status">-</span></p>
+            <hr>
+            <p>
+                <strong>Date :</strong>
+                <span id="currentDate"></span>
+            </p>
+            <div class="signature-section">
+
+                <div>
+                    ______________________
+                    <p>Class Teacher</p>
+                </div>
+
+                <div>
+                    ______________________
+                    <p>Principal</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script src="js/results.js"></script>
+    <footer>
+
+        <p>
+
+            © 2026 Student Result Management System
+
+            | Developed by Reetu Oram
+
+        </p>
+
+    </footer>
+</body>
+
+</html>
