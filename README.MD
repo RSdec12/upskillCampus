@@ -5,7 +5,7 @@ A web-based **Student Result Management System** developed using **HTML, CSS, an
 ---
 
 
-> https://rsdec12.github.io/student-result-management-system/
+> https://rsdec12.github.io/upskillCampus/
 
 
 ---
@@ -129,7 +129,7 @@ Student-Result-Management-System/
 1. Download or clone the repository.
 
 ```
-git clone https://rsdec12.github.io/student-result-management-system/
+git clone https://rsdec12.github.io/upskillCampus/
 ```
 
 2. Open the project folder.
